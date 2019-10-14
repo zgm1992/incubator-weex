@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_dialog_margin">20dp</dimen>
+    <dimen name="dialog_check_view_padding">6dp</dimen>
+    <dimen name="dialog_msg_padding_bottom">4dp</dimen>
+    <dimen name="dialog_corner_radius">10dp</dimen>
+    <dimen name="dialog_list_item_margin">20dp</dimen>
+    <dimen name="dialog_list_item_check_img_width">25dp</dimen>
+    <dimen name="dialog_list_item_height">45dp</dimen>
+
+    <dimen name="common_content_margin15">15dip</dimen>
+    <dimen name="common_dialog_width">300dp</dimen>
+
+    <dimen name="common_margin5">5dp</dimen>
+
+
+    <dimen name="float_layer_dialog_check_size">12sp</dimen>
+    <dimen name="float_layer_dialog_content_interval">6dp</dimen>
+    <dimen name="float_layer_dialog_content_interval_bottom">4dp</dimen>
+    <dimen name="float_layer_dialog_no_alert_interval">6dp</dimen>
+
+
+    <dimen name="single_choice_item_margin">20dp</dimen>
+    <dimen name="single_choice_item_check_size">25dp</dimen>
+    <dimen name="single_choice_item_height">45dp</dimen>
+
+
+    <!-- pickerView 顶部按钮padding -->
+    <dimen name="pickerview_topbar_padding">20dp</dimen>
+    <!-- pickerView 顶部按钮文字大小 -->
+    <dimen name="pickerview_topbar_btn_textsize">17sp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">18sp</dimen>
+    <!-- pickerView 顶部按钮栏高度 -->
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+    <!-- pickerView 选项文字大小 -->
+    <dimen name="pickerview_textsize">18sp</dimen>
+    <dimen name="pickerview_label_textsize">14sp</dimen>
+
+    <dimen name="select_dialog_item_height">48dp</dimen>
+    <dimen name="select_dialog_item_divider_height">0.5dp</dimen>
+
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--浮层对话框的颜色-->
+    <color name="float_layer_dialog_title">#FF666666</color>
+    <color name="float_layer_dialog_content">#666464</color>
+    <color name="float_layer_dialog_confirm">#FF267AFF</color>
+    <color name="float_layer_dialog_cancel">#FF666666</color>
+
+
+    <!--浮层对话框的颜色-->
+    <color name="dialog_title">#3e3a39</color>
+    <color name="dialog_content">#666464</color>
+    <color name="dialog_btn_confirm">#7ecef4</color>
+
+    <color name="dialog_btn_cancel">#7ecef4</color>
+
+    <color name="dialog_view_background">#FFFFFF</color>
+    <color name="dialog_split_line">#11112233</color>
+    <color name="dialog_title_color">#020f13</color>
+    <color name="dialog_content_color">#333333</color>
+    <color name="dialog_slected_color">#0e90ff</color>
+    <color name="dialog_normal_color">#b4c0cb</color>
+    <color name="dialog_unit_color">#020f13</color>
+    <color name="no_device_color">#0e90ff</color>
+    <color name="no_device_color_2">#8f0e90ff</color>
+    <color name="white_half">#8FFFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="dialog_edit_hint_color">#a5b1b6</color>
+    <color name="dialog_edit_text_color">#3e434a</color>
+    <color name="dialog_text_color">#3e434a</color>
+    <color name="dialog_button">#3c3c3c</color>
+    <color name="dialog_button_divider">#d7d7d7</color>
+    <color name="dialog_button_selected_color">#267aff</color>
+    <color name="dialog_button_cancle_text_color">#FF666666</color>
+    <color name="common_bottom_dialog_btn_color">#FFF9F9F9</color>
+    <color name="common_bottom_dialog_btn_color_pressed">#FFF2F2F2</color>
+
+    <color name="grey_light">#E7EEF3</color>
+    <color name="translucent">#00000000</color>
+    <color name="black_90">#15000000</color>
+    <color name="input_edit_hint_color">#cccccc</color>
+
+    <color name="common_split_line_color">#dfe5e7</color>
+    <color name="base_background_top">#666666</color>
+    <color name="common_text_color_4_style">#2b2b2b</color>
+
+    <color name="menu_item_tip1_color">#00b9ef</color>
+
+
+    <!--pickerView 颜色值-->
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_bgColor_overlay">#60000000</color>
+
+    <color name="divider_color">#E5E5E8</color>
+    <color name="background_color">#F9F9F9</color>
+
+    <!-- base resource -->
+    <color name="black">#000000</color>
+
+</resources>

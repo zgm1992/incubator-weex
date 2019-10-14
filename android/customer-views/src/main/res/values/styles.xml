@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="common_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="fullscreen_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="activity_common_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="dialog_title_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/dialog_title</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">20dp</item>
+
+    </style>
+
+    <style name="common_top_bar_left_img_4_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingTop">25dp</item>
+        <item name="android:paddingBottom">25dp</item>
+        <item name="android:paddingLeft">32dp</item>
+        <item name="android:paddingRight">32dp</item>
+    </style>
+
+
+    <style name="common_top_bar_left_second_img_4_style" parent="common_top_bar_left_img_4_style">
+        <item name="android:paddingLeft">32dp</item>
+        <item name="android:layout_marginLeft">26dp</item>
+        <item name="android:paddingRight">32dp</item>
+    </style>
+
+    <style name="common_top_bar_right_img_4_style" parent="common_top_bar_left_img_4_style">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">32dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="common_top_bar_right_second_img_4_style" parent="common_top_bar_left_img_4_style">
+        <item name="android:paddingLeft">32dp</item>
+        //因为还有个红点，所以统一改这个dimen
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+
+    <style name="common_top_bar_title_left_img_4_style">
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+
+    <style name="common_top_bar_left_text_4_style">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textColor">@color/base_background_top</item>
+    </style>
+
+
+    <style name="common_top_bar_right_text_4_style" parent="common_top_bar_left_text_4_style">
+        <item name="android:paddingRight">40dp</item>
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+
+
+    <style name="common_top_bar_center_text_4_style" parent="common_top_bar_left_text_4_style">
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/common_text_color_4_style</item>
+    </style>
+
+
+    <style name="dialog_msg_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/dialog_content</item>
+        <item name="android:textSize">@dimen/small_text</item>
+        <item name="android:layout_marginLeft">@dimen/common_dialog_margin</item>
+        <item name="android:layout_marginRight">@dimen/common_dialog_margin</item>
+        <item name="android:paddingTop">@dimen/dialog_check_view_padding</item>
+        <item name="android:paddingBottom">@dimen/dialog_msg_padding_bottom</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="dialog_tips_no_alert">
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/dialog_content</item>
+        <item name="android:textSize">@dimen/micro_text</item>
+    </style>
+
+    <style name="dialog_btn_cancel">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0px</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/dialog_btn_cancel</item>
+        <item name="android:textSize">@dimen/big_small_text</item>
+    </style>
+
+    <style name="dialog_btn_confirm">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0px</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/dialog_btn_confirm</item>
+        <item name="android:textSize">@dimen/big_small_text</item>
+    </style>
+
+
+    <style name="float_layer_dialog_title">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/float_layer_dialog_title</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">16dp</item>
+
+    </style>
+
+    <style name="float_layer_dialog_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/float_layer_dialog_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:paddingTop">55dp</item>
+        <item name="android:paddingBottom">50dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="float_layer_dialog_no_alert">
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/float_layer_dialog_content</item>
+        <item name="android:textSize">@dimen/float_layer_dialog_check_size</item>
+
+        <!--<item name="android:layout_gravity">center</item>-->
+
+    </style>
+
+    <style name="float_layer_dialog_checkBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/common_checkbox_selector</item>
+        <item name="android:gravity">center_vertical</item>
+
+    </style>
+
+    <style name="float_layer_dialog_confirm">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0px</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/selector_bottom_dialog_button</item>
+        <item name="android:textColor">@color/float_layer_dialog_confirm</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="float_layer_dialog_cancel">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_bottom_dialog_button</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0px</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/float_layer_dialog_cancel</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="NoActionBarWithOutAnimation">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+    </style>
+
+    <style name="card_loading_dialog">
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+    </style>
+
+    <style name="Animation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+
+    <!--PickerView Style-->
+    <style name="custom_dialog2" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 去除黑色边框的关键设置项 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 屏幕背景是否变暗 -->
+        <item name="android:backgroundDimAmount">0.3</item>
+    </style>
+
+    <style name="pickerview_dialogAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/scale_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_out</item>
+    </style>
+
+    <style name="bind_mobile_edit" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- AppCompatEditText默认状态状态设置底线颜色 -->
+        <item name="colorControlNormal">#FF979797</item>
+        <!-- AppCompatEditText选择的底线颜色 -->
+        <item name="colorControlActivated">#FF979797</item>
+
+    </style>
+    <!--PickerView Style-->
+
+    <style name="selectItem">
+        <item name="android:fontFamily">PingFangSC-Regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="Lite_Animation_Toast" parent="@android:style/Animation.Toast">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+
+</resources>
