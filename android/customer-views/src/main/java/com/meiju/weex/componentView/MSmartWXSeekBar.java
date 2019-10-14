@@ -8,7 +8,7 @@ import android.text.TextUtils;
 import android.util.Base64;
 import android.view.LayoutInflater;
 
-import com.alibaba.weex.commons.R;
+import com.meiju.weex.customer.R;
 import com.meiju.weex.componentView.indicatorseekbar.IndicatorSeekBar;
 import com.taobao.weex.WXSDKInstance;
 import com.taobao.weex.annotation.Component;

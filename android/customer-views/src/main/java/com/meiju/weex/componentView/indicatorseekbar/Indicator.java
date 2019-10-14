@@ -13,7 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
-import com.alibaba.weex.commons.R;
+import com.meiju.weex.customer.R;
 
 
 /**

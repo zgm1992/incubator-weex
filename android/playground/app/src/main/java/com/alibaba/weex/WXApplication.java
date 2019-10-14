@@ -42,6 +42,13 @@ import com.alibaba.weex.extend.module.WXEventModule;
 import com.alibaba.weex.extend.module.WXTitleBar;
 import com.alibaba.weex.extend.module.WXWsonTestModule;
 import com.facebook.drawee.backends.pipeline.Fresco;
+import com.meiju.weex.componentView.MSmartWXBarChart;
+import com.meiju.weex.componentView.MSmartWXLineChart;
+import com.meiju.weex.componentView.MSmartWXProgressCycle;
+import com.meiju.weex.componentView.MSmartWXSeekBar;
+import com.meiju.weex.componentView.MSmartWXSwitch;
+import com.meiju.weex.componentView.MSmartWXVerticalSeekBar;
+import com.meiju.weex.componentView.MSmartWXWeb;
 import com.taobao.weex.InitConfig;
 import com.taobao.weex.WXEnvironment;
 import com.taobao.weex.WXSDKEngine;
@@ -49,6 +56,7 @@ import com.taobao.weex.WXSDKManager;
 import com.taobao.weex.bridge.WXBridgeManager;
 import com.taobao.weex.common.WXException;
 import com.taobao.weex.performance.WXAnalyzerDataTransfer;
+import com.taobao.weex.ui.component.WXBasicComponentType;
 
 public class WXApplication extends Application {
 
@@ -103,6 +111,46 @@ public class WXApplication extends Application {
       WXSDKEngine.registerModule("titleBar", WXTitleBar.class);
 
       WXSDKEngine.registerModule("wsonTest", WXWsonTestModule.class);
+
+
+
+      /*******************************************自定义view 注册 start*****************************************************/
+//      WXSDKEngine.registerComponent("midea-map-view", MeijuWxMap.class); //百度地图
+
+      WXSDKEngine.registerComponent("midea-barchart-view", MSmartWXBarChart.class); //柱状图
+      WXSDKEngine.registerComponent("midea-areamap-view", MSmartWXBarChart.class); //兼容IOS的新柱状图，Android还是使用同一组件
+
+      WXSDKEngine.registerComponent("midea-seek-bar", MSmartWXSeekBar.class);
+//      WXSDKEngine.registerComponent("midea-video", MSmartWxMideaVideo.class);
+      WXSDKEngine.registerComponent("midea-switch", MSmartWXSwitch.class);
+      WXSDKEngine.registerComponent("midea-linechart-view", MSmartWXLineChart.class);
+
+      WXSDKEngine.registerComponent("midea-vslider-bar", MSmartWXVerticalSeekBar.class);
+
+      WXSDKEngine.registerComponent("midea-progresscycle-view", MSmartWXProgressCycle.class);
+
+//      WXSDKEngine.registerComponent("midea-pdf-view", MSmartWxPdfView.class);
+
+//      WXSDKEngine.registerComponent("midea-ppvideo-view", MSmartWXPPVideo.class);
+
+//      WXSDKEngine.registerComponent("midea-gesture-password", MsmartWXGesturePasswordView.class);
+
+      WXSDKEngine.registerComponent(WXBasicComponentType.WEB, MSmartWXWeb.class);
+
+//      WXSDKEngine.registerModule("ppVideoModule", PPVideoModule.class);
+
+//      WXSDKEngine.registerModule("picker", PickerModule.class);
+
+//      WXSDKEngine.registerComponent("pick-pallet", MSmartWXColorWheelPicker.class);
+//      WXSDKEngine.registerComponent("midea-time-pave", MSmartWXTimeSelect.class);
+//      WXSDKEngine.registerComponent("midea-calendar-pave", MSmartWXCalendarView.class);
+
+//      WXSDKEngine.registerComponent("midea-apng-view", MSmartWXApngVIew.class);   //APNG
+
+
+
+      /*******************************************自定义view 注册 end  *****************************************************/
+
 
       BindingX.register();
 

@@ -8,7 +8,7 @@ android {
 
     compileSdkVersion project.compileSdkVersion
     buildToolsVersion project.buildToolsVersion
-    resourcePrefix "weexcomm"
+    resourcePrefix "weexcustomer"
 
     defaultConfig {
         minSdkVersion project.minSdkVersion
@@ -43,6 +43,8 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile project(':weex_sdk')
+//    compile project(':commons')
+
     compile "com.android.support:support-v4:${project.supportLibVersion}"
     compile "com.android.support:appcompat-v7:${project.supportLibVersion}"
     // compile project(':weex_sdk')
@@ -53,7 +55,7 @@ dependencies {
 //    provided 'com.taobao.android:weex_analyzer:0.1.0.5'
 //    provided 'com.squareup.okhttp:okhttp:2.3.0'
 //    provided 'com.squareup.okhttp:okhttp-ws:2.3.0'
-//    provided "com.alibaba:fastjson:${project.fastjsonLibVersion}"
+    provided "com.alibaba:fastjson:${project.fastjsonLibVersion}"
 
     testCompile 'junit:junit:4.12'
 //    testCompile 'org.hamcrest:hamcrest-core:1.3'

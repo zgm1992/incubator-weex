@@ -29,8 +29,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.alibaba.weex.commons.R;
-import com.midea.meiju.baselib.util.DisplayUtil;
+import com.meiju.weex.customer.R;
 
 import java.io.File;
 import java.io.IOException;
@@ -485,14 +484,14 @@ public class IndicatorSeekBar extends View {
 
         int size = getThubSize();  //不晓得为什么，在上层，有padding 设置失败的概率
         if (size == 0) {
-            size = DisplayUtil.dip2px(getContext(), 10);
+            size = IndicatorUtils.dp2px(getContext(), 10);
         } else {
             size = size / 2; //只需要一半的距离
         }
 
         if (getThumbProgressStay()) {
             setPadding(size,
-                    DisplayUtil.dip2px(getContext(), 15),
+                    IndicatorUtils.dp2px(getContext(), 15),
                     size, 0);
         } else {
             setPadding(size,
@@ -994,7 +993,7 @@ public class IndicatorSeekBar extends View {
     }
 
     public void setThumbSize(int thumbSize) {
-        p.mThumbSize = DisplayUtil.dip2px(getContext(), thumbSize);
+        p.mThumbSize = IndicatorUtils.dp2px(getContext(), thumbSize);
         initData();
 
         //重新测量和绘制
@@ -1006,8 +1005,8 @@ public class IndicatorSeekBar extends View {
     }
 
     public void setProgressTrackSize(int progressTrackSize) {
-        p.mProgressTrackSize = DisplayUtil.dip2px(getContext(), progressTrackSize);
-        p.mBackgroundTrackSize = DisplayUtil.dip2px(getContext(), progressTrackSize);
+        p.mProgressTrackSize = IndicatorUtils.dp2px(getContext(), progressTrackSize);
+        p.mBackgroundTrackSize = IndicatorUtils.dp2px(getContext(), progressTrackSize);
     }
 
     public void setBackgroundTrackColor(String color) {
