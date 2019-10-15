@@ -774,20 +774,22 @@ public class MSmartWXLineChart extends WXComponent<MLineChart> {
             }
         }
 
-        //如果全都是 0 的数值，就不显示折线图 线条出来
-        List<Float> values = yAxisValueItem.getValue();
-        if (values != null && values.size() > 0) {
-            boolean isAllZero = true;
-            for (Float value : values) {
-                if (value > 0) {
-                    isAllZero = false;
-                    break;
-                }
-            }
-            if (isAllZero) {
-                dataSet.setVisible(false);
-            }
-        }
+//        //如果全都是 0 的数值，就不显示折线图 线条出来
+//        List<Float> values = yAxisValueItem.getValue();
+//        if (values != null && values.size() > 0) {
+//            boolean isAllZero = true;
+//            for (Float value : values) {
+//                if (value > 0) {
+//                    isAllZero = false;
+//                    break;
+//                }
+//            }
+//            if (isAllZero) {
+////                dataSet.setVisible(false);
+//            } else {
+//                dataSet.setVisible(true);
+//            }
+//        }
 
         //不显示点
         dataSet.setDrawCircles(false);
